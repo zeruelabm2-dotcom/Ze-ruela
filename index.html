@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Black - SAMP Development</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #fff;
+    }
+    header {
+      background-color: #111827;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header nav a {
+      margin: 0 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    header nav a:hover {
+      color: #fff;
+    }
+    .cart {
+      background: #1f2937;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-content {
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    button {
+      padding: 12px 20px;
+      background: #fff;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e5e7eb;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+    .card p {
+      color: #cbd5e1;
+      margin: 0 0 10px;
+    }
+    footer {
+      background: #111827;
+      padding: 30px;
+      margin-top: 50px;
+      color: #cbd5e1;
+      text-align: center;
+    }
+    footer .cols {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><strong>Apex Black</strong></div>
+  <nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="img.logo.jpg" alt="Gamemode Samp">
+      <div>
+        <h1></h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section>
+    <h2>Produtos a escolher</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img.gm1.jpg" alt="Sistema Blaze">
+        <h3>Sistema de Blaze</h3>
+        <p>R$25,00</p>
+      </div>
+      <div class="card">
+        <img src="img.gm2.jpg" alt="Textdraw Inventário">
+        <h3>Textdraw Samp Inventário</h3>
+        <p>R$20,00</p>
+      </div>
+      <div class="card">
+        <img src="img.gm3.jpg" alt="Mapper Civil">
+        <h3>Mapper para spawn civil</h3>
+        <p>R$50,00</p>
+      </div>
+      <div class="card">
+        <img src="img.gm4.jpg" alt="Gamemode Samp">
+        <h3>Gamemode Samp</h3>
+        <p>R$39,99</p>
+      </div>
+      <div class="card">
+        <img src="img.gm5.jpg" alt="Sistema de Login">
+        <h3>Sistema de Tela de Login + mapper de fundo</h3>
+        <p>R$39,99</p>
+      </div>
+      <div class="card">
+        <img src="img gm6.jpg" alt="Sistema Spawn">
+        <h3>Sistema de escolher spawn</h3>
+        <p>R$30,00</p>
+      </div>
+      <div class="card">
+        <img src="img.gm7.jpg" alt="Mapper LS">
+        <h3>Mapper 24/7 em praça de LS</h3>
+        <p>R$40,00</p>
+      </div>
+      <div class="card">
+        <img src="img.gm8.jpg" alt="HQ Polícia">
+        <h3>Bases/HQ de polícia</h3>
+        <p>R$39,99</p>
+      </div>
+      <div class="card">
+        <img src="img.gm9.jpg" alt="Gamemode Intense RP">
+        <h3>Gamemode Intense Roleplay</h3>
+        <p>R$199,99</p>
+      </div>
+      <div class="card">
+        <img src="img.gm10.jpg" alt="Gamemode RPG">
+        <h3>Gamemode RPG</h3>
+        <p>R$294,99</p>
+      </div>
+      <div class="card">
+        <img src="img/em-breve.jpg" alt="Produto em breve">
+        <h3>Produto em breve</h3>
+        <p>R$0,00</p>
+      </div>
+      <div class="card">
+        <img src="img/em-breve.jpg" alt="Produto em breve">
+        <h3>Produto em breve</h3>
+        <p>R$0,00</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="cols">
+    <div>
+      <h4>Serviços Hospedagem</h4>
+      <p>Servidor VPS<br>Hospedagem Samp<br>Hospedagem de Site</p>
+    </div>
+    <div>
+      <h4>Serviços SAMP</h4>
+      <p>Textdraw<br>Gamemodes<br>Sistemas<br>Mapas</p>
+    </div>
+    <div>
+      <h4>Apex Black</h4>
+      <p>A Apex Black é a escolha confiável e profissional para desenvolver seu projeto em SAMP.</p>
+    </div>
+  </div>
+  <p>© 2025 Apex Black - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
